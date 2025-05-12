@@ -1,21 +1,15 @@
-creBuild 	 2025.03
+creBuild 	 2025.05
  creUbuntu 	 24.04.2 LTS
   UbuntuName 	 noble
   OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
   msmtp version 1.8.24
-  Java 	 openjdk version "21.0.6" 2025-01-21
+  Java 	 openjdk version "21.0.7" 2025-04-15
   Python3 	 Python 3.12.3
-   Flask 	 
- creCoding 	 2024.0
-   numpy 	 1.26.4
-   scipy 	 1.11.4
+   numpy 	 2.2.5
+   scipy 	 
    pandas 	 2.2.3
+   Flask 	 
+ crePython 	 2024.0
+   scipy 	 1.11.4
    geopandas 	 1.0.1
    openCV 	 4.11.0
-   rpy2 	 3.5.17
-  R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
-  sbcl 	 SBCL 2.2.9.debian
-  julia version 1.8.1
-  rustc 1.75.0 (82e1608df 2023-12-21) (built from a source tarball)
-  cargo 1.75.0
-  
