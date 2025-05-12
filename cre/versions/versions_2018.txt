@@ -1,0 +1,18 @@
+creBuild 	 2024.01
+ creUbuntu 	 18.04.6 LTS
+  UbuntuName 	 bionic
+  OpenSSL 1.1.1  11 Sep 2018
+  Java 	 openjdk version "1.8.0_362"
+  Python3 	 Python 3.6.9
+   Flask 	 Flask 2.0.3
+ creCoding 	 2018.0
+   numpy 	 1.19.5
+   scipy 	 1.5.4
+   pandas 	 1.1.5
+   openCV 	 4.9.0
+  R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+  sbcl 	 SBCL 1.4.5.debian
+  julia version 1.6.6
+  rustc 1.65.0
+  cargo 1.65.0
+  
