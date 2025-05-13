@@ -30,7 +30,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install python3-dev pyt
 RUN pip3 install setuptools wheel psutil pipreqs arrow
 # https://github.com/cgoldberg/xvfbwrapper   
 RUN pip3 install seaborn plotly==5.9 kaleido xvfbwrapper
-RUN pip3 install scipy rtree==0.9.4 geopandas==0.6 patsy statsmodels datatable xlrd==1.2 openpyxl==3.0
+RUN pip3 install scipy rtree==0.9.4 geopandas==0.6 fiona patsy statsmodels datatable xlrd==1.2 openpyxl==3.0
 RUN pip3 install connexion beautifulsoup4==4.9
 #RUN pip3 install pycurl  #recommended by jupyterlab
 # https://pingouin-stats.org/build/html/index.html
@@ -49,7 +49,10 @@ RUN mkdir -p /cre && \
 RUN mkdir -p /cre && touch /cre/versions.txt && \ 
    echo "$(date +'%F %R') \t creCoding \t $CRE_VERSION" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   scipy \t $(python3 -c 'import scipy; print(scipy.__version__)')" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t   statsmodels \t $(python3 -c 'import statsmodels; print(statsmodels.__version__)')" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   geopandas \t $(python3 -c 'import geopandas; print(geopandas.__version__)')" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t   fiona \t $(python3 -c 'import fiona; print(fiona.__version__)')" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t   beautifulsoup4 \t $(python3 -c 'import beautifulsoup4; print(beautifulsoup4.__version__)')" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   openCV \t $(python3 -c 'import cv2; print(cv2.__version__)')" >> /cre/versions.txt
 
 
