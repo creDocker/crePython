@@ -4,17 +4,13 @@ creBuild 	 2025.05
   OpenSSL 1.1.1f  31 Mar 2020
   Java 	 openjdk version "11.0.27" 2025-04-15
   Python3 	 Python 3.8.10
+   numpy 	 1.19.0
+   pandas 	 1.2.0
    Flask 	 Flask 3.0.3
- creCoding 	 2020.0
-   numpy 	 1.24.4
-   scipy 	 1.9.3
-   pandas 	 2.0.3
+ crePython 	 2020.0
+   scipy 	 1.10.1
+   statsmodels 	 0.14.1
    geopandas 	 0.6.0
+   fiona 	 1.10.1
+   beautifulsoup4 	 
    openCV 	 4.11.0
-   rpy2 	 
-  
-  sbcl 	 
-  
-  
-  
-  
