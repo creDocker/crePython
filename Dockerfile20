@@ -37,7 +37,7 @@ RUN pip3 install connexion beautifulsoup4==4.9
 #RUN pip3 install pycurl  #recommended by jupyterlab
 # https://pingouin-stats.org/build/html/index.html
 RUN pip3 install pingouin
-RUN pip3 install selenium
+RUN pip3 install selenium webdriver-manager
 
 # OpenCV
 RUN apt-get -y --no-install-recommends  install python3-opencv
