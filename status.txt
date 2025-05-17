@@ -76,6 +76,8 @@ https://docs.jax.dev/en/latest/
 https://github.com/uber/h3?uclick_id=634eeb2c-dc35-4026-8476-d03bbffcc8ce
 https://www.uber.com/en-DE/blog/h3/
 
+https://fastapi.tiangolo.com
+pip3 install "fastapi[standard]"
 
 DONE:
 =====
