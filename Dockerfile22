@@ -59,7 +59,7 @@ RUN mkdir -p /cre && \
     pip3 freeze --no-cache-dir > /cre/requirements.txt.orig
 
 RUN mkdir -p /cre && touch /cre/versions.txt && \ 
-   echo "$(date +'%F %R') \t creCoding \t $CRE_VERSION" >> /cre/versions.txt && \
+   echo "$(date +'%F %R') \t crePython \t $CRE_VERSION" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   scipy \t $(python3 -c 'import scipy; print(scipy.__version__)')" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   statsmodels \t $(python3 -c 'import statsmodels; print(statsmodels.__version__)')" >> /cre/versions.txt && \
    echo "$(date +'%F %R') \t   geopandas \t $(python3 -c 'import geopandas; print(geopandas.__version__)')" >> /cre/versions.txt && \
