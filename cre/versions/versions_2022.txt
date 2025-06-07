@@ -1,4 +1,4 @@
-creBuild 	 2025.05
+creBuild 	 2025.06
  creUbuntu 	 22.04.5 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
@@ -6,12 +6,12 @@ creBuild 	 2025.05
   Java 	 openjdk version "17.0.15" 2025-04-15
   Python3 	 Python 3.10.12
    numpy 	 2.2.6
-   pandas 	 2.2.3
+   pandas 	 2.3.0
    Flask 	 
  crePython 	 2022.0
    scipy 	 1.8.0
    statsmodels 	 
-   geopandas 	 1.0.1
+   geopandas 	 1.1.0
    fiona 	 1.10.1
    beautifulsoup4 	 
    openCV 	 4.11.0
