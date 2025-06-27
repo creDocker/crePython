@@ -79,6 +79,8 @@ https://www.uber.com/en-DE/blog/h3/
 https://www.starlette.io/
 https://docs.pydantic.dev/latest/
 
+https://github.com/NVIDIA/warp
+
 DONE:
 =====
 https://www.scipy.org/
