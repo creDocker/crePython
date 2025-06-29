@@ -12,7 +12,7 @@ creBuild 	 2025.06
  crePython 	 2024.0
    scipy 	 1.11.4
    statsmodels 	 0.14.4
-   geopandas 	 1.1.0
+   geopandas 	 1.1.1
    fiona 	 1.10.1
    beautifulsoup4 	 
    openCV 	 4.11.0
