@@ -13,4 +13,4 @@ creBuild 	 2025.07
    geopandas 	 0.6.0
    fiona 	 1.10.1
    beautifulsoup4 	 
-   openCV 	 4.11.0
+   openCV 	 4.12.0
