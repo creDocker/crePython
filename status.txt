@@ -81,6 +81,16 @@ https://docs.pydantic.dev/latest/
 
 https://github.com/NVIDIA/warp
 
+https://github.com/Parsl/parsl
+
+https://pydantic.dev/
+https://github.com/pola-rs/polars
+https://github.com/emmett-framework/granian   HTTP server
+https://github.com/astral-sh/uv   package manager pip
+
+
+https://github.com/oxylabs/playwright-web-scraping
+
 DONE:
 =====
 https://www.scipy.org/
@@ -91,6 +101,8 @@ http://www.science.smith.edu/~jcrouser/SDS293/labs/lab4-py.html
 https://fastapi.tiangolo.com
 
 
+
+https://github.com/Sangarshanan/geopatra
 
 
 

@@ -47,6 +47,9 @@ RUN pip3 install connexion beautifulsoup4
 RUN pip3 install pingouin
 RUN pip3 install selenium webdriver-manager selenium-requests
 
+## Install new chrome ??
+## wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb; dpkg -i google-chrome-stable_current_amd64.deb
+
 # OpenCV
 RUN apt-get -y --no-install-recommends  install python3-opencv
 RUN pip3 install opencv-python
