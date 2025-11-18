@@ -39,7 +39,7 @@ RUN pip3 install setuptools wheel psutil pipreqs arrow
 # https://github.com/cgoldberg/xvfbwrapper
 RUN pip3 install seaborn plotly kaleido xvfbwrapper
 # rtree==0.9.4 & geopandas==0.6 & xlrd==1.2 & openpyxl==3.0 ??
-RUN pip3 install scipy rtree geopandas==0.9 fiona patsy statsmodels xlrd openpyxl geocoder
+RUN pip3 install scipy rtree geopandas fiona patsy statsmodels xlrd openpyxl geocoder
 # beautifulsoup4==4.9 ??
 RUN pip3 install connexion beautifulsoup4
 #RUN pip3 install pycurl  #recommended by jupyterlab
