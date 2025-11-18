@@ -52,7 +52,7 @@ RUN pip3 install selenium webdriver-manager selenium-requests
 
 # OpenCV
 RUN apt-get -y --no-install-recommends  install python3-opencv
-RUN pip3 install opencv-python
+RUN pip3 install opencv-python==4.11
 
 #FastAPI: https://fastapi.tiangolo.com
 RUN pip3 install "fastapi[standard]"
