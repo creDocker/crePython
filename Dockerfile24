@@ -30,6 +30,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install python3-dev pyt
 RUN apt-get  -y --no-install-recommends install python3-scipy python3-h5py
 ##RUN pip3 install --upgrade pip 
 RUN pip3 install setuptools wheel psutil pipreqs arrow
+RUN pip3 install aiohttp asyncio
 ## No module named 'gendoc' -> 22.04 only
 ## RUN pip3 install --upgrade pip 
 ## RUN pip3 install gendoc
@@ -38,6 +39,15 @@ RUN pip3 install setuptools wheel psutil pipreqs arrow
 # plotly==5.9 ??
 # https://github.com/cgoldberg/xvfbwrapper
 RUN pip3 install seaborn plotly kaleido xvfbwrapper
+
+# https://shapely.readthedocs.io/en/2.1.1/manual.html
+# https://cartopy.readthedocs.io/stable/
+RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
+
+# PIL: https://pypi.org/project/pillow/
+# folium: https://python-visualization.github.io/folium/latest/
+RUN pip3 install pillow folium
+
 # rtree==0.9.4 & geopandas==0.6 & xlrd==1.2 & openpyxl==3.0 ??
 RUN pip3 install scipy rtree geopandas fiona patsy statsmodels xlrd openpyxl geocoder
 # beautifulsoup4==4.9 ??
@@ -57,6 +67,8 @@ RUN pip3 install opencv-python==4.5.5.64
 #FastAPI: https://fastapi.tiangolo.com
 RUN pip3 install "fastapi[standard]"
 
+#deep-translator: https://pypi.org/project/deep-translator/
+RUN pip3 install deep-translator
 
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
