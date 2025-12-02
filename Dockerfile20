@@ -35,7 +35,7 @@ RUN pip3 install seaborn plotly==5.9 kaleido==0.2.1 xvfbwrapper
 
 # https://shapely.readthedocs.io/en/2.1.1/manual.html
 # https://cartopy.readthedocs.io/stable/
-RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
+## RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
 
 # PIL: https://pypi.org/project/pillow/
 # folium: https://python-visualization.github.io/folium/latest/

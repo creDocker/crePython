@@ -42,7 +42,7 @@ RUN pip3 install seaborn plotly kaleido xvfbwrapper
 
 # https://shapely.readthedocs.io/en/2.1.1/manual.html
 # https://cartopy.readthedocs.io/stable/
-RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
+## RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
 
 # PIL: https://pypi.org/project/pillow/
 # folium: https://python-visualization.github.io/folium/latest/
@@ -58,6 +58,7 @@ RUN pip3 install connexion beautifulsoup4
 RUN pip3 install selenium webdriver-manager selenium-requests
 
 #may change later to own package:
+#deep-translator: https://pypi.org/project/deep-translator/
 RUN pip3 install deep-translator
 RUN pip3 install newspaper4k
 
@@ -70,9 +71,6 @@ RUN pip3 install opencv-python==4.5.5.64
 
 #FastAPI: https://fastapi.tiangolo.com
 RUN pip3 install "fastapi[standard]"
-
-#deep-translator: https://pypi.org/project/deep-translator/
-RUN pip3 install deep-translator
 
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
