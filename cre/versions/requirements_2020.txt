@@ -65,7 +65,7 @@ numpy==1.24.4
 opencv-python==4.10.0.84
 openpyxl==3.0.0
 packaging==24.1
-pandas==2.0.3
+pandas==1.2.0
 pandas-flavor==0.6.0
 pandocfilters==1.5.1
 parso==0.8.4

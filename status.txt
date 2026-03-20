@@ -104,6 +104,8 @@ https://fastapi.tiangolo.com
 
 https://github.com/Sangarshanan/geopatra
 
+https://www.infoworld.com/video/4127484/run-postgresql-in-python-no-setup-required.html
+
 
 
 
