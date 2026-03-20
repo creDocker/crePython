@@ -32,56 +32,56 @@ RUN apt-get  -y --no-install-recommends install python3-scipy python3-h5py
 
 #uv TODO
 
-RUN pip3 install setuptools wheel psutil pipreqs arrow
-RUN pip3 install aiohttp asyncio
+RUN uv pip install setuptools wheel psutil pipreqs arrow
+RUN uv pip install aiohttp asyncio
 ## No module named 'gendoc' -> 22.04 only
-## RUN pip3 install --upgrade pip 
-## RUN pip3 install gendoc
-## RUN pip3 install datatable 
+## RUN uv pip install --upgrade pip 
+## RUN uv pip install gendoc
+## RUN uv pip install datatable 
 
 # plotly==5.9 ??
 # https://github.com/cgoldberg/xvfbwrapper
-RUN pip3 install seaborn plotly kaleido xvfbwrapper
+RUN uv pip install seaborn plotly kaleido xvfbwrapper
 
 # https://shapely.readthedocs.io/en/2.1.1/manual.html
 # https://cartopy.readthedocs.io/stable/
-## RUN pip3 install shapely cartopy --no-binary shapely --no-binary cartopy
+## RUN uv pip install shapely cartopy --no-binary shapely --no-binary cartopy
 
 # PIL: https://pypi.org/project/pillow/
 # folium: https://python-visualization.github.io/folium/latest/
-RUN pip3 install pillow folium
+RUN uv pip install pillow folium
 
 # rtree==0.9.4 & geopandas==0.6 & xlrd==1.2 & openpyxl==3.0 ??
-RUN pip3 install scipy rtree geopandas fiona patsy statsmodels xlrd openpyxl geocoder
+RUN uv pip install scipy rtree geopandas fiona patsy statsmodels xlrd openpyxl geocoder
 # beautifulsoup4==4.9 ??
-RUN pip3 install connexion beautifulsoup4
-#RUN pip3 install pycurl  #recommended by jupyterlab
+RUN uv pip install connexion beautifulsoup4
+#RUN uv pip install pycurl  #recommended by jupyterlab
 # https://pingouin-stats.org/build/html/index.html
-##RUN pip3 install pingouin
-RUN pip3 install selenium webdriver-manager selenium-requests
+##RUN uv pip install pingouin
+RUN uv pip install selenium webdriver-manager selenium-requests
 
 #may change later to own package:
 #deep-translator: https://pypi.org/project/deep-translator/
-RUN pip3 install deep-translator
+RUN uv pip install deep-translator
 #
-RUN pip3 install newspaper4k
-#RUN pip3 install pythainlp            #for thai
-#RUN pip3 install newspaper4k[th]      #for thai
-#RUN pip3 install newspaper4k[all]     #for all tokenizers
+RUN uv pip install newspaper4k
+#RUN uv pip install pythainlp            #for thai
+#RUN uv pip install newspaper4k[th]      #for thai
+#RUN uv pip install newspaper4k[all]     #for all tokenizers
 
 ## Install new chrome ??
 ## wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb; dpkg -i google-chrome-stable_current_amd64.deb
 
 # OpenCV
 RUN apt-get -y --no-install-recommends  install python3-opencv
-RUN pip3 install opencv-python==4.5.5.64
+RUN uv pip install opencv-python==4.5.5.64
 
 #FastAPI: https://fastapi.tiangolo.com
-RUN pip3 install "fastapi[standard]"
+RUN uv pip install "fastapi[standard]"
 
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
-    pip3 freeze --no-cache-dir > /cre/requirements.txt.orig
+    uv pip freeze --no-cache-dir > /cre/requirements.txt.orig
 
 RUN mkdir -p /cre && touch /cre/versions.txt && \ 
    echo "$(date +'%F %R') \t crePython \t $CRE_VERSION" >> /cre/versions.txt && \
