@@ -54,7 +54,7 @@ RUN uv pip install pillow folium
 # rtree==0.9.4 & geopandas==0.6 & xlrd==1.2 & openpyxl==3.0 ??
 ## RUN apt-get -y --no-install-recommends install libgdal=3.12.3 libgdal-dev=3.12.3 gdal-bin=3.12.3 python3-gdal=3.12.3  # UBUNTU.
 ## RUN uv pip install gdal
-#RUN uv pip install fiona  #needs gdal 3.12.3
+#RUN uv pip install fiona  #TODO needs gdal 3.12.3
 RUN uv pip install scipy rtree geopandas patsy statsmodels xlrd openpyxl geocoder
 # beautifulsoup4==4.9 ??
 RUN uv pip install connexion beautifulsoup4
@@ -67,8 +67,9 @@ RUN uv pip install selenium webdriver-manager selenium-requests
 #deep-translator: https://pypi.org/project/deep-translator/
 RUN uv pip install deep-translator
 #
-RUN apt-get -y --no-install-recommends install libxml2-dev  libxslt-dev python-lxml
-RUN uv pip install newspaper4k
+
+## RUN apt-get -y --no-install-recommends install libxml2-dev  libxslt-dev 
+## RUN uv pip install newspaper4k    # TODO
 #RUN uv pip install pythainlp            #for thai
 #RUN uv pip install newspaper4k[th]      #for thai
 #RUN uv pip install newspaper4k[all]     #for all tokenizers
