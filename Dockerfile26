@@ -67,7 +67,7 @@ RUN uv pip install selenium webdriver-manager selenium-requests
 #deep-translator: https://pypi.org/project/deep-translator/
 RUN uv pip install deep-translator
 #
-RUN apt-get -y --no-install-recommends install libxml2-dev libxml2 libxslt-dev libxslt
+RUN apt-get -y --no-install-recommends install libxml2-dev  libxslt-dev 
 RUN uv pip install newspaper4k
 #RUN uv pip install pythainlp            #for thai
 #RUN uv pip install newspaper4k[th]      #for thai
