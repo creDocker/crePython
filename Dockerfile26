@@ -28,9 +28,6 @@ RUN apt-get update && apt-get -y --no-install-recommends install libspatialindex
 # install Python
 RUN apt-get update && apt-get -y --no-install-recommends install python3-dev python3-plotly && apt-get clean 
 RUN apt-get  -y --no-install-recommends install python3-scipy python3-h5py
-##RUN pip3 install --upgrade pip 
-
-#uv TODO
 
 RUN uv pip install setuptools wheel psutil pipreqs arrow
 RUN uv pip install aiohttp asyncio
