@@ -44,7 +44,7 @@ jobs:
         id: docker_push
         uses: docker/build-push-action@v7
         with:
-          file: ./Dockerfile24
+          file: ./Dockerfile26
           push: true
           tags: credocker/crepython:2026.0
 
