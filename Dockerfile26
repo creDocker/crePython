@@ -52,7 +52,7 @@ RUN uv pip install pillow folium
 ## RUN apt-get -y --no-install-recommends install libgdal=3.12.3 libgdal-dev=3.12.3 gdal-bin=3.12.3 python3-gdal=3.12.3  # UBUNTU.
 ## RUN uv pip install gdal
 #RUN uv pip install fiona  #TODO needs gdal 3.12.3
-RUN uv pip install scipy rtree geopandas patsy statsmodels xlrd openpyxl geocoder
+RUN uv pip install scipy rtree geopandas patsy statsmodels xlrd openpyxl geocoder geopy
 # beautifulsoup4==4.9 ??
 RUN uv pip install connexion beautifulsoup4
 #RUN uv pip install pycurl  #recommended by jupyterlab

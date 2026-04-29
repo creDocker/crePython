@@ -90,6 +90,10 @@ https://github.com/astral-sh/uv   package manager pip
 
 
 https://github.com/oxylabs/playwright-web-scraping
+https://github.com/D4Vinci/Scrapling
+https://scrapling.readthedocs.io/en/latest/index.html
+
+
 
 DONE:
 =====
@@ -100,7 +104,7 @@ https://www.statsmodels.org/stable/glm.html
 http://www.science.smith.edu/~jcrouser/SDS293/labs/lab4-py.html
 https://fastapi.tiangolo.com
 
-
+https://geopy.readthedocs.io
 
 https://github.com/Sangarshanan/geopatra
 
