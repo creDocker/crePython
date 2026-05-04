@@ -53,7 +53,7 @@ RUN apt-get -y --no-install-recommends install libgdal-dev
 RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN C_INCLUDE_PATH=/usr/include/gdal
 RUN echo $(gdal-config --version)
-RUN pip3 install gdal
+RUN pip3 install gdal==3.4.1
 
 
 RUN pip3 install scipy rtree geopandas==0.9 fiona patsy statsmodels xlrd openpyxl geocoder geopy
