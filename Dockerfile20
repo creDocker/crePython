@@ -64,6 +64,13 @@ RUN pip3 install opencv-python
 #FastAPI: https://fastapi.tiangolo.com
 RUN pip3 install "fastapi[standard]"
 
+
+# creTools
+# https://github.com/SnakeOilBottles
+#RUN pip3 install CreGeoReference==2020.*
+RUN pip3 install CreGeoReference
+
+
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
    pip3 freeze --no-cache-dir > /cre/requirements.txt.orig
