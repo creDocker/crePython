@@ -15,6 +15,6 @@ creBuild 	 2026.05
    statsmodels 	 
    geopandas 	 1.1.3
    fiona 	 
-   gdal 	 
+   gdal 	 3.12.2
    beautifulsoup4 	 
    openCV 	 4.10.0

@@ -42,6 +42,7 @@ folium==0.20.0
 fonttools==4.62.1
 frozenlist==1.8.0
 future==1.0.0
+gdal==3.12.2
 geocoder==1.38.1
 geographiclib==2.1
 geopandas==1.1.3
