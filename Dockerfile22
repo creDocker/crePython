@@ -48,7 +48,14 @@ RUN pip3 install seaborn plotly kaleido xvfbwrapper
 RUN pip3 install pillow folium
 
 # rtree==0.9.4 & geopandas==0.9 & xlrd==1.2 & openpyxl==3.0 ??
+
+RUN apt-get -y --no-install-recommends install libgdal-dev
+RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
+RUN C_INCLUDE_PATH=/usr/include/gdal
+RUN echo $(gdal-config --version)
 RUN pip3 install gdal
+
+
 RUN pip3 install scipy rtree geopandas==0.9 fiona patsy statsmodels xlrd openpyxl geocoder geopy
 # beautifulsoup4==4.9 ??
 RUN pip3 install connexion beautifulsoup4

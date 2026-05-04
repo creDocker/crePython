@@ -45,7 +45,7 @@ RUN apt-get -y --no-install-recommends install libgdal-dev
 RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN C_INCLUDE_PATH=/usr/include/gdal
 RUN echo $(gdal-config --version)
-RUN pip3 install gdal==3.1.0
+RUN pip3 install gdal==3.0.4
 
 RUN pip3 install scipy rtree==0.9.4 geopandas==0.6 fiona patsy statsmodels datatable xlrd==1.2 openpyxl==3.0 geopy
 RUN pip3 install connexion beautifulsoup4==4.9
