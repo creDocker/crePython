@@ -54,8 +54,8 @@ RUN uv pip install pillow folium
 RUN apt-get -y --no-install-recommends install libgdal-dev
 RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN C_INCLUDE_PATH=/usr/include/gdal
-RUN echo $(gdal-config --version)
-RUN uv pip install gdal==3.12.3
+RUN echo $(gdal-config --version) #3.12.2
+RUN uv pip install gdal==$(gdal-config --version)
 
 
 #RUN uv pip install fiona  #TODO needs gdal 3.12.3
