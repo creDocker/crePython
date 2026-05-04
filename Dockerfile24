@@ -49,6 +49,7 @@ RUN uv pip install seaborn plotly kaleido xvfbwrapper
 RUN uv pip install pillow folium
 
 # rtree==0.9.4 & geopandas==0.6 & xlrd==1.2 & openpyxl==3.0 ??
+RUN pip3 install gdal
 RUN uv pip install scipy rtree geopandas fiona patsy statsmodels xlrd openpyxl geocoder geopy
 # beautifulsoup4==4.9 ??
 RUN uv pip install connexion beautifulsoup4

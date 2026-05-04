@@ -41,7 +41,7 @@ RUN pip3 install seaborn plotly==5.9 kaleido==0.2.1 xvfbwrapper
 # folium: https://python-visualization.github.io/folium/latest/
 RUN pip3 install pillow folium
 
-RUN pip3 install gdal
+RUN pip3 install gdal==3.1.0
 RUN pip3 install scipy rtree==0.9.4 geopandas==0.6 fiona patsy statsmodels datatable xlrd==1.2 openpyxl==3.0 geopy
 RUN pip3 install connexion beautifulsoup4==4.9
 #RUN pip3 install pycurl  #recommended by jupyterlab
