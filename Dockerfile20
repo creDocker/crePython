@@ -69,6 +69,7 @@ RUN pip3 install "fastapi[standard]"
 # https://github.com/SnakeOilBottles
 #RUN pip3 install CreGeoReference==2020.*
 RUN pip3 install CreGeoReference
+#RUN pip3 install CreLanguageTranslate==2020.*
 
 
 # Freeze python requirements here:

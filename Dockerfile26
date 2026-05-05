@@ -88,6 +88,12 @@ RUN uv pip install opencv-python==4.5.5.64
 #FastAPI: https://fastapi.tiangolo.com
 RUN uv pip install "fastapi[standard]"
 
+# creTools
+# https://github.com/SnakeOilBottles
+#RUN pip3 install CreGeoReference==2026.*
+RUN pip3 install CreGeoReference
+#RUN pip3 install CreLanguageTranslate==2026.*
+
 # Freeze python requirements here:
 RUN mkdir -p /cre && \ 
     uv pip freeze --no-cache-dir > /cre/requirements.txt.orig
