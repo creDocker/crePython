@@ -1,4 +1,4 @@
-creBuild 	 2026.06
+creBuild 	 2026.07
  creUbuntu 	 22.04.5 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
@@ -14,4 +14,4 @@ creBuild 	 2026.06
    geopandas 	 
    fiona 	 1.9.6
    beautifulsoup4 	 
-   openCV 	 4.13.0
+   openCV 	 5.0.0
