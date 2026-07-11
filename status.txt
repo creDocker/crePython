@@ -94,6 +94,8 @@ https://github.com/D4Vinci/Scrapling
 https://scrapling.readthedocs.io/en/latest/index.html
 
 
+https://xarray-spatial.readthedocs.io/en/latest/index.html
+
 
 DONE:
 =====

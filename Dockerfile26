@@ -58,8 +58,10 @@ RUN echo $(gdal-config --version) #3.12.2
 RUN uv pip install gdal==$(gdal-config --version)
 
 
+
 #RUN uv pip install fiona  #TODO needs gdal 3.12.3
 RUN uv pip install scipy rtree geopandas patsy statsmodels xlrd openpyxl geocoder geopy
+RUN uv pip install netCDF4 xarray
 # beautifulsoup4==4.9 ??
 RUN uv pip install connexion beautifulsoup4
 #RUN uv pip install pycurl  #recommended by jupyterlab
