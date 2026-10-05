@@ -1,4 +1,4 @@
-creBuild 	 2026.09
+creBuild 	 2026.10
  creUbuntu 	 26.04.1 LTS
   UbuntuName 	 resolute
   OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
@@ -13,7 +13,7 @@ creBuild 	 2026.09
  crePython 	 2026.0
    scipy 	 1.16.3
    statsmodels 	 
-   geopandas 	 1.1.4
+   geopandas 	 1.2.0
    fiona 	 
    gdal 	 3.12.2
    beautifulsoup4 	 
